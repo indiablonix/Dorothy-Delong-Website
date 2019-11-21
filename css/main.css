@@ -1,0 +1,76 @@
+/*******************************************************************************
+Default styles
+****************************************************************************/
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 0;
+}
+
+
+/**************************** Mobile Styles *****************************/
+
+
+/**************************
+Navigation
+***************************/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 20px;
+  width: 100%;
+}
+
+li {
+  background: white;
+  border: none;
+  color: #ff386d;
+  text-align: left;
+  padding: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ff386d;
+}
+
+
+
+.nav-dropdown  li {
+  display: block;
+}
+
+.nav-dropdown {
+  cursor: pointer;
+  padding: 0;
+  width: 45px;
+}
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1.5rem;
+  right: 0;
+  list-style-type: none;
+  padding: 0;      
+  display: none;
+}
+
+.nav-dropdown li:hover > ul,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown li {
+  clear: both;
+  width: 100%;
+}
