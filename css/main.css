@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-family: 'Abel', sans-serif;
   font-size: 16px;
+  color: #000000;
 }
 
 img, embed, object, video {
@@ -47,18 +48,14 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 0;
   width: 95%;
 
 }
 
-li {
-  background: white;
-  border: none;
-  color: #ff386d;
-  text-align: left;
-  padding: 10px;
+ul li a img {
+  width: 40px;
 }
 
 li a {
@@ -84,28 +81,48 @@ li a {
   margin: 0;
 }
 
-#hamburger a img {
-  width: 80%;
-}
-
 .dropdown {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 1.5rem;
+  top: 0;
   right: 0;
   list-style-type: none;
   padding: 0;      
   display: none;
   background: white;
+  width: 100%;
 }
+
+.dropdown li {
+  background: white;
+  border: none;
+  color: #ff386d;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.3rem;
+  color: #000000;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.dropdown li:first-of-type {
+  margin-top: 30px;
+}
+
 
 .nav-dropdown ul li:hover > ul,
 .dropdown:hover {
   visibility: visible;
   opacity: 1;
   display: block;
+}
+
+.dropdown li span:hover {
+  cursor: default;
 }
 
 .dropdown li {
@@ -121,12 +138,21 @@ Portfolio section
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  margin: 70px 25px;
-  
+  margin: 70px 0;
+  width: 100%;
+}
+
+.work-samples div {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .work-samples img {
   margin-bottom: 30px;
+  width: 100%;
+
 }
 
 /**************************
@@ -146,7 +172,7 @@ About Section
   margin: 50px auto;
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 2.3rem;
   color: #ff386d;
 }
@@ -163,6 +189,10 @@ About Section
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
+.about-card img {
+  width: 100%;
+}
+
 .about-card h2 {
   font-family: 'Rajdhani', sans-serif;
   color: #ff386d;
@@ -174,4 +204,66 @@ About Section
 .about-card p {
   text-align: center;
   line-height: 1.4rem;
+}
+
+/*****************************
+Footer
+****************************/
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 5px auto;
+  width: 80%;
+}
+
+footer p:first-of-type {
+  margin-top: 2.3rem;
+}
+
+
+footer p a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;  
+}
+
+footer p a:hover {
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.social-media span {
+  width: 45px;
+}
+
+/********* Tablet Styles **********/
+
+@media screen and (min-width: 700px) {
+
+  nav {
+    margin: 40px auto;
+    width: 90%;
+  }
+
+  ul li a img {
+    width: 50px;
+  }
 }
