@@ -17,19 +17,14 @@ img, embed, object, video {
 	max-width: 100%;
 }
 
-/************* Mobile Styles ***************/
 
-
-/**************************
-Navigation
-***************************/
+/********* Navigation *********/
 
 .dl-logo {
   display: flex;
   justify-content: flex-start;
-  padding-top: 5px;
   margin-left: 15px;
-  width: 60%;
+  width: 20%;
 }
 
 .dl-logo img {
@@ -47,92 +42,135 @@ Navigation
 nav {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  align-items: center;
   margin: 40px auto;
   padding: 0;
   width: 95%;
-
-}
-
-ul li a img {
-  width: 40px;
-}
-
-li a {
-  text-decoration: none;
-  color: #ff386d;
-}
-
-.nav-dropdown ul li {
-  display: block;
-  width: 100%;
 }
 
 .nav-dropdown {
   display: flex;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0;
-  padding-right: 15px;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 60px;
 }
 
-.nav-dropdown ul {
+#menu-icon {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
+
+#menu-icon img {
+  width: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.dropdown {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1.5rem;
-  top: 0;
-  right: 0;
-  list-style-type: none;
-  padding: 0;      
-  display: none;
-  background: white;
-  width: 100%;
-}
-
-.dropdown li {
-  background: white;
-  border: none;
+.menu li a {
+  text-decoration: none;
   color: #ff386d;
-  text-align: left;
-  padding: 10px;
-  margin: 0;
-  font-size: 1.3rem;
-  color: #000000;
-  text-align: center;
-  line-height: 1.8rem;
-}
-
-.dropdown li:first-of-type {
-  margin-top: 30px;
 }
 
 
-.nav-dropdown ul li:hover > ul,
-.dropdown:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
+/********** Footer ***********/
 
-.dropdown li span:hover {
-  cursor: default;
-}
-
-.dropdown li {
-  clear: both;
+footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
   width: 100%;
 }
 
-/************************
-Portfolio section
-*************************/
+footer p {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 5px auto;
+  width: 80%;
+}
+
+.contact {
+  margin-top: 2.3rem;
+}
+
+footer p a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;  
+}
+
+footer p a:hover {
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.social-media span {
+  width: 45px;
+}
+
+
+
+/********************** Mobile Styles **********************/
+
+/******** Navigation *********/
+@media screen and (max-width: 1023px) {
+
+  #menu-icon {
+    display: flex;
+  }
+
+  .menu  {
+    display: none;
+    justify-content: center;
+    flex-flow: column nowrap;
+    position: absolute;
+    background: #fff;
+    border: #ff386d solid 5px;
+    right: auto;
+    top: 90px;
+    width: 60%;
+    padding: 50px;
+  }
+
+  .menu li {
+    margin: 10px auto;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  nav div:hover ul {
+    display: flex;
+  }
+
+  .sm-nav {
+    visibility: hidden;
+    position: absolute;
+  }
+
+}
+
+
+/******* Portfolio section *******/
 
 .work-samples {
   display: flex;
@@ -155,9 +193,7 @@ Portfolio section
 
 }
 
-/**************************
-About Section
-****************************/
+/********** About Section **********/
 
 .about {
   display: flex;
@@ -168,11 +204,11 @@ About Section
 }
 
 .about h1 {
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.3rem;
   color: #ff386d;
 }
@@ -206,64 +242,146 @@ About Section
   line-height: 1.4rem;
 }
 
-/*****************************
-Footer
-****************************/
 
-footer {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 100%;
-}
-
-footer p {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 5px auto;
-  width: 80%;
-}
-
-footer p:first-of-type {
-  margin-top: 2.3rem;
-}
-
-
-footer p a {
-  font-weight: 400;
-  text-decoration: none;
-  color: #000000;  
-}
-
-footer p a:hover {
-  cursor: pointer;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  text-align: center;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.social-media span {
-  width: 45px;
-}
-
-/********* Tablet Styles **********/
+/****************** Tablet Styles *******************/
 
 @media screen and (min-width: 700px) {
 
+/****** Navigation *******/
+
   nav {
-    margin: 40px auto;
+    margin: 20px auto;
     width: 90%;
   }
 
-  ul li a img {
+ .nav-drpdown a img {
     width: 50px;
   }
+
+/******* Portfolio ********/
+
+  .work-samples {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 80px auto 150px;
+  }
+
+  .work-samples div {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .work-samples div img {
+    margin: 0;
+  }
+
+/******** About **********/
+
+.about h1 {
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+  .about-card {
+    width: 50%;
+  }
+
+  .about-card img {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .about-card p {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+/******** Footer **********/
+
+  footer {
+    margin: 30px auto;
+    flex-flow: row wrap;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 65%;
+    margin: 0;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: left;
+  }
+
+  footer p:first-of-type {
+    width: 58%;
+  }
+
+  footer p:last-of-type {
+    width: 35%;
+    text-align: left;
+  }
+
+  .social-media {
+    width: 20%;
+    flex-flow: row nowrap;
+    margin: 0;
+  }
+
+}
+
+/********* Large tablets/ Desktop styles ***********/
+
+@media screen and (min-width: 1024px) {
+
+
+ .nav-dropdown {
+   width: 80%;
+ }
+
+/********* Navigation *********/  
+
+header {
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/********* Portfolio **********/
+
+main {
+  margin: 80px auto 0px auto;
+}
+
+.work-samples div {
+  width: 30%;
+}
+
+footer {
+  display: none;
+}
+
+
+/********* About *********/
+
+.about-card {
+  width: 40%;
+}
+
+.about-card img {
+  width: 80%;
+}
+
+.about-card p {
+  width: 75%;
+  margin: 30px auto;
+}
+
+
 }
