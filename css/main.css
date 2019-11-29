@@ -1,6 +1,4 @@
-/******************** 
-Default styles
-***********************/
+/********************* Default styles ***********************/
 
 body {
   display: flex;
@@ -15,6 +13,11 @@ body {
 
 img, embed, object, video {
 	max-width: 100%;
+}
+
+ul li a:hover,
+.contact p a:hover {
+  color: #ff9463;
 }
 
 
@@ -80,6 +83,11 @@ nav {
   color: #ff386d;
 }
 
+.menu li span {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+}
+
 
 /********** Footer ***********/
 
@@ -122,8 +130,12 @@ footer p a:hover {
   width: 100%;
 }
 
-.social-media span {
+.social-media a {
   width: 45px;
+}
+
+.social-media a:hover {
+  animation: 
 }
 
 
@@ -250,7 +262,7 @@ footer p a:hover {
 /****** Navigation *******/
 
   nav {
-    margin: 20px auto;
+    margin: 30px auto;
     width: 90%;
   }
 
@@ -371,7 +383,7 @@ footer {
 /********* About *********/
 
 .about-card {
-  width: 40%;
+  width: 35%;
 }
 
 .about-card img {
