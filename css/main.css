@@ -133,9 +133,6 @@ footer p a:hover {
   width: 45px;
 }
 
-.social-media a:hover {
-  animation: 
-}
 
 
 
@@ -255,8 +252,8 @@ footer p a:hover {
 
 .about-text {
   background: #EFEFEF;
-  margin: auto;
   width: 80%;
+  margin: auto;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
@@ -307,24 +304,42 @@ footer p a:hover {
     width: 50%;
     font-size: 2rem;
     margin-top: 60px;
+    line-height: 3rem;
   }
 
   .about-card {
     flex-flow: row wrap;
+    width: 90%;
+    margin: 200px auto;
+  }
+
+  .about-card img {
+    margin: 0;
+    position: relative;
+    left: 80px;
+    top: 50px;
   }
 
   .dl-headshot {
     margin-top: 250px;
-
   }
 
-  .dl-headshot img {
-   
+  .about-text {
+    margin: 0 auto 0 15px;
+    width: 50%;
+  }
+
+  .about-text h2 {
+    text-align: left;
+    margin-left: 85px;
+    margin-top: 60px;
   }
 
   .about-text p {
-    width: 80%;
-    margin: 15px auto;
+    width: 60%;
+    margin: 15px auto 45px 65px;
+    text-align: left;
+
   }
 
 /******** Footer **********/
@@ -368,50 +383,75 @@ footer p a:hover {
 
 @media screen and (min-width: 1024px) {
 
-
- .nav-dropdown {
-   width: 80%;
- }
-
 /********* Navigation *********/  
 
-header {
-  background: #fff;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  header {
+    background: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+  }
+
+  .nav-dropdown {
+    width: 80%;
+  }
+
+  /********* Portfolio **********/
+
+  main {
+    margin: 80px auto 0px auto;
+  }
+
+  .work-samples {
+    width: 80%;
+    margin-top: 120px;
+  }
+
+  .work-samples div {
+    width: 30%;
+  }
+
+  footer {
+    display: none;
+  }
+
+
+  /********* About *********/
+
+  .about-card {
+    width: 65%;
+  }
+
+  .about-text {
+    width: 55%;
+  }
+
+  .about-text h2 {
+    margin-top: 75px;
+  }
+
+  .about-card img {
+
+  }
+
+  .about-card p {
+    width: 70%;
+    margin: 30px auto 65px 65px;
+  }
+
+
 }
 
-/********* Portfolio **********/
+/***************** Large Desktop styles ********************/
 
-main {
-  margin: 80px auto 0px auto;
-}
+@media screen and (min-width: 1440px) {
 
-.work-samples div {
-  width: 30%;
-}
+/********* About **********/
 
-footer {
-  display: none;
-}
-
-
-/********* About *********/
-
-.about-card {
-  width: 35%;
-}
-
-.about-card img {
-  width: 80%;
-}
-
-.about-card p {
-  width: 75%;
-  margin: 30px auto;
-}
-
+  .about-card {
+    width: 55%;
+  }
 
 }
