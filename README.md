@@ -1,6 +1,6 @@
 # Dorothy-Delong-Website
 
-Portofilio website for Dorothy Delong. This is a project for my Skillcrush course. 
+Portfolio website for Dorothy Delong. This is a project for my Skillcrush course. 
 
 ## Code
 
