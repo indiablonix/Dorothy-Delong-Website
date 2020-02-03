@@ -1,97 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Rajdhani:400,700&display=swap" rel="stylesheet">
-  <title>Dorothy DeLong Photography</title>
+  <title>Dorothy Delong</title>
 </head>
+
 <body>
-  <header>
-    <nav id="navigation" role="navigation">
-      <div class="dl-logo">
-        <img src="assets/Path 1.png" alt="Dorothy DeLong Logo">
-        <p>Dorothy <br>
-          DeLong</p>
+  <header class="navigation">
+    <nav>
+      <div class="logo">
+        <img src="" alt="">
       </div>
-    <!-- Begin dropdown menu -->
-      <div class="nav-dropdown">
-         <a href="#" id="menu-icon">
-           <img src="assets/iconfinder_menu-alt_134216.svg" alt="hamburger menu">
-          </a>
-            <ul class="menu">
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#about-delong">About Me</a>
-              </li>
-              <li>
-                <span>
-                  For commissions and inquiries, contact:
-                </span> 
-                <a href="mailto:hello@ddelong.com"> hello@ddelong.com</a>
-              <li>
-            </ul>  
-            <div class="social-media sm-nav">  
-                <a href="https://www.facebook.com/" ><img src="assets/facebook.png" alt="Facebook"></a>
-                <a href="https://twitter.com/"><img src="assets/twitter.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/"><img src="assets/instagram.png" alt="Instagram"></a>
-                <a href="https://www.flickr.com/"><img src="assets/flickr.png" alt="Flickr"></a>
-            </div>  
+      <div class="navigation-menu">
+        <img src="./assets/bars.svg" alt="hamburger menu">
+        <ul>
+          <li>Work</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </div>
     </nav>
-      <!-- End dropdown menu -->
   </header>
 
-  <main id="portfolio">
-    <section class="work-samples">
-      <div>
-        <img src="assets/father.png" alt="father and daughter">
-      </div>
-      <div>
-        <img src="assets/flag.png" alt="woman with flag">
-      </div>
-      <div>
-        <img src="assets/haircut.png" alt="women getting her hair cut">
-      </div>
-      <div>
-        <img src="assets/moment.png" alt="woman performing on stage">
-      </div>
-      <div>
-        <img src="assets/black-girl-magic.png" alt="happy woman">
-      </div>
-      <div>
-        <img src="assets/flex.png" alt="strong woman">
+  <main>
+    <section class="portfolio-section">
+      <div class="portfolio-images">
+        <img src="./assets/moment-medium.jpg" alt="woman on stage" sizes="90vw"
+          srcset="./assets/moment-large.jpg 1024w, ./assets/moment-medium 640w">
+        <img src="./assets/smile-medium.jpg" alt="girl smiling at camera" sizes="90vw"
+          srcset="./assets/smile-large.jpg 1024w, ./assets/smile-medium.jpg 640w">
+        <img src="" alt="" sizes="" srcset="">
+        <img src="" alt="" sizes="" srcset="">
       </div>
     </section>
 
-    <section id="about-delong" class="about">
-      <h1>"I capture the realness behind feminism, no filter."</h1>
-      <div class="about-card">
-          <img src="assets/Dorothy-Headshot.png" alt="Dorothy DeLong">
-        <div class="about-text">
-          <h2>About</h2>
-          <p>My work focuses on candid photographs taken on location at events for women's rights, places where women are owning their space, and fleeting encounters on the streets. My work engulfs the viewer in real moments of strength, vulnerability, and solidarity.</p>
-        </div>
+    <section class="about-section">
+      <h1>About</h1>
+      <div class="headshot">
+        <img src="" alt="" srcset="">
       </div>
+      <div class="about-text"></div>
+      <h2 class="quote">
+        “I capture the realness behind feminism, no filter.”
+      </h2>
+      <p>
+        My work focuses on candid photographs taken on location at events for women’s rights, places where women are
+        owning their space, and fleeting encounters on the streets. My work engulfs the viewer in real moments of
+        strength, vulnerability, and solidarity.
+      </p>
     </section>
+
+    <footer class="contact-section">
+      <h1>Contact</h1>
+      <div class="contact-info">
+        <p>hello@ddelong.com</p>
+        <p>999-999-9999</p>
+      </div>
+      <div class="social-media">
+
+      </div>
+    </footer>
   </main>
-
-  <footer id="contact">
-    <div class="contact">
-      <p>For commission and inquiries, contact:</p>
-      <p><a href="mailto:hello@ddelong.com">hello@ddelong.com</a></p>
-    </div>
-    <section class="social-media">  
-        <a href="https://www.facebook.com/"><img src="assets/facebook.png" alt="Facebook"></a>
-        <a href="https://twitter.com/"><img src="assets/twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/"><img src="assets/instagram.png" alt="Instagram"></a>
-        <a href="https://www.flickr.com/"><img src="assets/flickr.png" alt="Flickr"></a>
-    </section>
-  </footer>
 </body>
+
 </html>

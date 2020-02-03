@@ -18,6 +18,7 @@ img, embed, object, video {
 ul li a:hover,
 .contact p a:hover {
   color: #ff386d;
+  text-decoration: underline #ff386d;
 }
 
 
@@ -430,10 +431,6 @@ footer p a:hover {
 
   .about-text h2 {
     margin-top: 75px;
-  }
-
-  .about-card img {
-
   }
 
   .about-card p {
