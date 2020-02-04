@@ -1,454 +1,79 @@
-/********************* Default styles ***********************/
+/************* Default styles ***********/
 
 body {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 100%;
-  padding: 0;
-  font-family: 'Abel', sans-serif;
   font-size: 16px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #505050;
+  margin: 0;
+}
+
+a {
   color: #505050;
 }
 
-img, embed, object, video {
-	max-width: 100%;
+a:hover {
+  color: #780090;
 }
 
-ul li a:hover,
-.contact p a:hover {
-  color: #ff386d;
-  text-decoration: underline #ff386d;
+header,
+main,
+footer {
+  width: 100%;
 }
 
 
-/********* Navigation *********/
-
-.dl-logo {
-  display: flex;
-  justify-content: flex-start;
-  width: 20%;
-}
-
-.dl-logo img {
-  width: 48px;
-  height: 65px;
-}
-
-.dl-logo p {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
+/************* NAVIGATION *************/
 
 nav {
   display: flex;
   justify-content: space-between;
-  flex-flow: row nowrap;
   align-items: center;
-  margin: 40px auto;
-  padding: 0;
-  width: 90%;
-}
-
-.nav-dropdown {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  width: 60px;
-}
-
-#menu-icon {
-  display: none;
-  width: 45px;
-  height: 45px;
-}
-
-#menu-icon img {
-  width: 40px;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.menu li span {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-}
-
-
-/********** Footer ***********/
-
-footer {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 100%;
-}
-
-footer p {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-align: center;
-  margin: 5px auto;
-  width: 80%;
-}
-
-.contact {
-  margin-top: 2.3rem;
-}
-
-footer p a {
-  font-weight: 400;
-  text-decoration: none;
-  color: #000000;  
-}
-
-footer p a:hover {
-  cursor: pointer;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  text-align: center;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.social-media a {
-  width: 45px;
-}
-
-
-
-
-/********************** Mobile Styles **********************/
-
-/******** Navigation *********/
-@media screen and (max-width: 1023px) {
-
-  #menu-icon {
-    display: flex;
-  }
-
-  .menu  {
-    display: none;
-    justify-content: center;
-    flex-flow: column nowrap;
-    position: absolute;
-    background: #fff;
-    border: #ff386d solid 5px;
-    right: auto;
-    top: 90px;
-    width: 60%;
-    padding: 50px;
-  }
-
-  .menu li {
-    margin: 10px auto;
-    line-height: 2rem;
-    text-align: center;
-    width: 100%;
-    font-size: 1.4rem;
-  }
-
-  nav div:hover ul {
-    display: flex;
-  }
-
-  .sm-nav {
-    visibility: hidden;
-    position: absolute;
-  }
-
-}
-
-
-/******* Portfolio section *******/
-
-.work-samples {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  margin: 70px 0;
-  width: 100%;
-}
-
-.work-samples div {
-  display: flex;
-  justify-content: center;
+  margin: 15px auto;
   width: 85%;
-  margin: 0 auto;
+  height: 100px;
 }
 
-.work-samples img {
-  margin-bottom: 30px;
-  width: 100%;
-
-}
-
-/********** About Section **********/
-
-.about {
+.logo {
   display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  width: 100%;
+  width: 40%;
 }
 
-.about h1 {
-  width: 70%;
-  margin: 30px auto;
-  padding: 50px 30px;
-  text-align: center;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.8rem;
-  line-height: 2.3rem;
-  background: #EFEFEF;
-  color: #ff386d;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+.logo img {
+  width: 3rem;
 }
 
-.dl-headshot {
+.logo h1 {
   display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0 10px;
 }
 
-.about-card {
+.navigation-menu {
+  display: none;
+}
+
+.navigation-toggle {
+  width: 2.2rem;
+}
+
+/********** PORTFOLIO **********/
+
+.portfolio-section {
   display: flex;
   flex-flow: column wrap;
+  margin: 20px auto;
 }
 
-.about-card img {
-  width: 200px;
-  height: 200px;
+.portfolio-image {
+  width: 85%;
+  height: 330px;
+  margin: 20px auto;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  background: #000000;
-  margin: 100px auto -50px;
-  border: #000000 solid 25px;
-  z-index: 2;
-}
-
-.about-text h2 {
-  font-family: 'Rajdhani', sans-serif;
-  color: #ff386d;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 30px;
-}
-
-.about-text {
-  background: #EFEFEF;
-  width: 80%;
-  margin: auto;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.about-text p {
-  text-align: center;
-  line-height: 1.4rem;
-  padding: 0px 20px 30px;
-}
-
-
-/****************** Tablet Styles *******************/
-
-@media screen and (min-width: 700px) {
-
-/****** Navigation *******/
-
-  nav {
-    margin: 30px auto;
-    width: 90%;
-  }
-
- .nav-drpdown a img {
-    width: 50px;
-  }
-
-/******* Portfolio ********/
-
-  .work-samples {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 80px auto 150px;
-  }
-
-  .work-samples div {
-    width: 45%;
-    margin: 10px;
-  }
-
-  .work-samples div img {
-    margin: 0;
-  }
-
-/******** About **********/
-
-  .about h1 {
-    width: 50%;
-    font-size: 2rem;
-    margin-top: 60px;
-    line-height: 3rem;
-  }
-
-  .about-card {
-    flex-flow: row wrap;
-    width: 90%;
-    margin: 200px auto;
-  }
-
-  .about-card img {
-    margin: 0;
-    position: relative;
-    left: 80px;
-    top: 50px;
-  }
-
-  .dl-headshot {
-    margin-top: 250px;
-  }
-
-  .about-text {
-    margin: 0 auto 0 15px;
-    width: 50%;
-  }
-
-  .about-text h2 {
-    text-align: left;
-    margin-left: 85px;
-    margin-top: 60px;
-  }
-
-  .about-text p {
-    width: 60%;
-    margin: 15px auto 45px 65px;
-    text-align: left;
-
-  }
-
-/******** Footer **********/
-
-  footer {
-    margin: 30px auto;
-    flex-flow: row wrap;
-  }
-
-  .contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 65%;
-    margin: 0;
-  }
-
-  footer p {
-    margin: 0;
-    text-align: left;
-  }
-
-  footer p:first-of-type {
-    width: 58%;
-  }
-
-  footer p:last-of-type {
-    width: 35%;
-    text-align: left;
-  }
-
-  .social-media {
-    width: 20%;
-    flex-flow: row nowrap;
-    margin: 0;
-  }
-
-}
-
-/********* Large tablets/ Desktop styles ***********/
-
-@media screen and (min-width: 1024px) {
-
-/********* Navigation *********/  
-
-  header {
-    background: #fff;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 3;
-  }
-
-  .nav-dropdown {
-    width: 80%;
-  }
-
-  /********* Portfolio **********/
-
-  main {
-    margin: 80px auto 0px auto;
-  }
-
-  .work-samples {
-    width: 80%;
-    margin-top: 120px;
-  }
-
-  .work-samples div {
-    width: 30%;
-  }
-
-  footer {
-    display: none;
-  }
-
-
-  /********* About *********/
-
-  .about-card {
-    width: 65%;
-  }
-
-  .about-text {
-    width: 55%;
-  }
-
-  .about-text h2 {
-    margin-top: 75px;
-  }
-
-  .about-card p {
-    width: 70%;
-    margin: 30px auto 65px 65px;
-  }
-
-
-}
-
-/***************** Large Desktop styles ********************/
-
-@media screen and (min-width: 1440px) {
-
-/********* About **********/
-
-  .about-card {
-    width: 55%;
-  }
-
 }

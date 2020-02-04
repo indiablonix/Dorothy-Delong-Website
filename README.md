@@ -13,4 +13,4 @@ Dorothy DeLong is a photographer who needed a website to display her work. Her r
 
 ## Code
 
-I used HTML and CSS to build this site. Besides my own styling, I also used Normalize.css. You can download that file here: https://necolas.github.io/normalize.css/
+I used HTML and CSS to build this site. I also used Normalize.css. You can download that file here: https://necolas.github.io/normalize.css/

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Dorothy Delong</title>
 </head>
 
@@ -12,35 +14,57 @@
   <header class="navigation">
     <nav>
       <div class="logo">
-        <img src="" alt="">
+        <img src="./assets/Logo.svg" alt="Dorothy Delong logo">
+        <h1>Dorothy <br> Delong</h1>
       </div>
       <div class="navigation-menu">
-        <img src="./assets/bars.svg" alt="hamburger menu">
         <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li>Contact</li>
+          <a href="#">
+            <li>Work</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
         </ul>
+      </div>
+      <div class="navigation-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hamburger">
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+        </svg>
+        <!-- <img src="./assets/bars.svg" alt="hamburger menu"> -->
       </div>
     </nav>
   </header>
 
   <main>
     <section class="portfolio-section">
-      <div class="portfolio-images">
-        <img src="./assets/moment-medium.jpg" alt="woman on stage" sizes="90vw"
+      <div class="portfolio-image">
+        <img src="./assets/moment-medium.jpg" alt="woman on stage" sizes="85vw"
           srcset="./assets/moment-large.jpg 1024w, ./assets/moment-medium 640w">
-        <img src="./assets/smile-medium.jpg" alt="girl smiling at camera" sizes="90vw"
+      </div>
+      <div class="portfolio-image">
+        <img src="./assets/smile-medium.jpg" alt="girl smiling at camera" sizes="85vw"
           srcset="./assets/smile-large.jpg 1024w, ./assets/smile-medium.jpg 640w">
-        <img src="" alt="" sizes="" srcset="">
-        <img src="" alt="" sizes="" srcset="">
+      </div>
+      <div class="portfolio-image">
+        <img src="./assets/haircut-medium.jpg" alt="woman getting her hair cut" sizes="85vw"
+          srcset="./assets/haircut-large.jpg 1024w, ./assets/haircut-medium.jpg 640w">
+      </div>
+      <div class="portfolio-image">
+        <img src="./assets/father-medium.jpg" alt="father and daughter" sizes="85vw"
+          srcset="./assets/father-large.jpg 1024w, ./assets/father-medium.jpg 640w">
       </div>
     </section>
 
     <section class="about-section">
       <h1>About</h1>
       <div class="headshot">
-        <img src="" alt="" srcset="">
+        <img src="./assets/dorothy-headshot-medium.jpg" alt="Dorothy Delong" sizes="90vw"
+          srcset="./assets/dorothy-headshot-large.jpg 1024w, ./assets/dorothy-headshot-medium.jpg 640w">
       </div>
       <div class="about-text"></div>
       <h2 class="quote">
@@ -56,11 +80,17 @@
     <footer class="contact-section">
       <h1>Contact</h1>
       <div class="contact-info">
-        <p>hello@ddelong.com</p>
+        <p>
+          <a href="mailto:hello@ddelong.com">
+            hello@ddelong.com
+          </a>
+        </p>
         <p>999-999-9999</p>
       </div>
       <div class="social-media">
-
+        <a href="https://www.facebook.com"><img src="./assets/facebook-square.svg" alt="facebook icon"></a>
+        <a href="https://www.instagram.com"><img src="./assets/instagram.svg" alt="instagram icon"></a>
+        <a href="https://www.twitter.com"><img src="./assets/twitter-square.svg" alt="twitter icon"></a>
       </div>
     </footer>
   </main>
