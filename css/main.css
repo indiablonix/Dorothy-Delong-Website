@@ -1,4 +1,4 @@
-/************* Default styles ***********/
+/************* DEFAULT STYLES ***********/
 
 body {
   font-size: 16px;
@@ -28,9 +28,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px auto;
-  width: 85%;
+  /* margin: 15px auto; */
+  /* width: 85%; */
   height: 100px;
+  padding: 30px;
 }
 
 .logo {
@@ -63,17 +64,66 @@ nav {
 .portfolio-section {
   display: flex;
   flex-flow: column wrap;
-  margin: 20px auto;
+  padding-bottom: 55px;
 }
 
 .portfolio-image {
   width: 85%;
   height: 330px;
   margin: 20px auto;
+  box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, .5);
 }
 
 .portfolio-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/********** ABOUT **********/
+
+.about-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.headshot {
+  width: 85%;
+  height: 330px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 6px -3px rgba(0, 0, 0, .5);
+}
+
+.headshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote,
+.about-text p {
+  text-align: center;
+  width: 85%;
+}
+
+.quote {
+  color: #780090;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+  margin: 45px auto;
+}
+
+.about-text p {
+  font-size: 1.13rem;
+  line-height: 1.6rem;
+  margin: 0 auto;
 }
