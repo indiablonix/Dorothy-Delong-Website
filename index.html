@@ -18,30 +18,26 @@
         <h1>Dorothy <br> Delong</h1>
       </div>
       <div class="navigation-menu">
-        <ul>
-          <a href="#">
+        <ul class="main-menu">
+          <a href="#portfolio">
             <li>Work</li>
           </a>
-          <a href="#">
+          <a href="#about">
             <li>About</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li>Contact</li>
           </a>
         </ul>
       </div>
       <div class="navigation-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hamburger">
-          <path
-            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-        </svg>
-        <!-- <img src="./assets/bars.svg" alt="hamburger menu"> -->
+        <img src="./assets/bars.svg" alt="hamburger menu">
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="portfolio">
       <div class="portfolio-image">
         <img src="./assets/moment-medium.jpg" alt="woman on stage" sizes="85vw"
           srcset="./assets/moment-large.jpg 1024w, ./assets/moment-medium 640w">
@@ -60,7 +56,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
       <h1>About</h1>
       <div class="headshot">
         <img src="./assets/dorothy-headshot-medium.jpg" alt="Dorothy Delong" sizes="90vw"
@@ -78,7 +74,7 @@
       </div>
     </section>
 
-    <footer class="contact-section">
+    <footer class="contact-section" id="contact">
       <h1>Contact</h1>
       <div class="contact-info">
         <p>
@@ -95,6 +91,8 @@
       </div>
     </footer>
   </main>
+
+  <script src="./js/delong.js"></script>
 </body>
 
 </html>

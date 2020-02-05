@@ -9,6 +9,7 @@ body {
 
 a {
   color: #505050;
+  text-decoration: none;
 }
 
 a:hover {
@@ -57,10 +58,30 @@ nav {
 
 .navigation-menu {
   display: none;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.main-menu {
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-menu li {
+  margin: 30px auto;
 }
 
 .navigation-toggle {
   width: 2.2rem;
+}
+
+.active-menu {
+  display: block;
 }
 
 /********** PORTFOLIO **********/
@@ -177,3 +198,8 @@ nav {
   text-align: center;
   width: 33%;
 }
+
+
+/***************************************************
+TABLET STYLES
+***************************************************/
