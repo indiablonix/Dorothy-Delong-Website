@@ -6,3 +6,4 @@ navToggle.addEventListener('click', function() {
   menu.classList.toggle('active-menu');
 });
 
+
