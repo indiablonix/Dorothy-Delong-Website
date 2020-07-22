@@ -1,7 +1,4 @@
 # Dorothy-Delong-Website
+Portfolio project for Skillcrush Web Design course. 
 
-Portfolio website for Dorothy Delong. This is a project for my Skillcrush course. 
 
-## Code
-
-I used HTML5 and CSS.
